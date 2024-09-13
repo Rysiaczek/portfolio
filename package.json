@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rysiaczek.github.io/portfolio",
   "name": "moja",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^11.5.4",
     "gh-pages": "^6.1.1",
     "gltfjsx": "^6.5.0",
     "react": "^18.3.1",
@@ -16,8 +18,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "deploy": "gh-pages -d dist",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
