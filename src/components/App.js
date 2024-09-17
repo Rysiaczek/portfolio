@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 
-import Header from "./header";
 import About from "./about";
+import Header from "./header";
+import Projects from "./projects";
+import Skils from "./skils";
 
 import "./css/App.css";
 
@@ -16,6 +18,8 @@ function App() {
     <div className="app">
       <Header />
       <About />
+      <Projects />
+      <Skils />
     </div>
   );
 }

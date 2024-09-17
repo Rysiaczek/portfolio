@@ -14,7 +14,7 @@ function AnimatedCamera(props) {
     const handleScroll = () => {
       const maxScroll =
         document.documentElement.scrollHeight - window.innerHeight;
-      const newZ = 8 - (window.scrollY / maxScroll) * 12;
+      const newZ = 8 - (window.scrollY / maxScroll) * 25;
       setTargetZ(Math.max(0, Math.min(8, newZ)));
     };
 
