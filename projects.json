@@ -1,50 +1,38 @@
 [
   {
-    "url": "/imgs/abstract/1.jpg",
-    "title": "Title 1",
+    "url": "/img/projects/1.jpg",
+    "title": "perfectenglishmaszewo.pl",
     "id": 1,
     "position": "start"
   },
   {
-    "url": "/imgs/abstract/2.jpg",
-    "title": "Title 2",
+    "url": "/img/projects/2.jpg",
+    "title": "geodezjachojna.pl",
     "id": 2,
     "position": "end"
   },
   {
-    "url": "/imgs/abstract/3.jpg",
-    "title": "Title 3",
+    "url": "/img/projects/3.jpg",
+    "title": "pigart.pl",
     "id": 3,
     "position": "start"
   },
   {
-    "url": "/imgs/abstract/4.jpg",
-    "title": "Title 4",
+    "url": "/img/projects/4.jpg",
+    "title": "konradoleszczuk.pl",
     "id": 4,
     "position": "end"
   },
   {
-    "url": "/imgs/abstract/5.jpg",
-    "title": "Title 5",
+    "url": "/img/projects/4.jpg",
+    "title": "konradoleszczuk.pl",
     "id": 5,
     "position": "start"
   },
   {
-    "url": "/imgs/abstract/6.jpg",
-    "title": "Title 6",
+    "url": "/img/projects/4.jpg",
+    "title": "konradoleszczuk.pl",
     "id": 6,
-    "position": "end"
-  },
-  {
-    "url": "/imgs/abstract/7.jpg",
-    "title": "Title 7",
-    "id": 7,
-    "position": "start"
-  },
-  {
-    "url": "/imgs/abstract/7.jpg",
-    "title": "Title 8",
-    "id": 8,
     "position": "end"
   }
 ]
