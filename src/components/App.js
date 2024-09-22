@@ -6,6 +6,7 @@ import Projects from "./projects";
 import Skils from "./skils";
 
 import "./css/App.css";
+import Contact from "./contact";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Projects />
       <Skils />
+      <Contact />
     </div>
   );
 }

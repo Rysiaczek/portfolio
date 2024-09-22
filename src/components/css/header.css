@@ -22,8 +22,41 @@
   align-items: center;
 }
 .scene-element {
-  width: 40vw;
-  height: 40vh;
+  width: 100vw;
+  height: 50vh;
   background-color: white;
   transform-origin: center;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .scene-element {
+    width: 80vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .scene-element {
+    width: 70vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .scene-element {
+    width: 60vw;
+    height: 50vh;
+  }
+}
+@media (min-width: 2560px) {
+  .scene-element {
+    width: 50vw;
+    height: 50vh;
+  }
 }

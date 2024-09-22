@@ -26,18 +26,21 @@ const Projects = () => {
 
 const HorizontalScrollCarousel = ({ cards }) => {
   const targetRef = useRef(null);
+  const cardWidth = 450;
+  const gap = 16;
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-
+  const totalWidth = cards.length * (cardWidth + gap + 10);
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["1%", `${cards.length * -cards.length + 13}%`]
+    ["0%", `-${totalWidth - window.innerWidth}px`]
   );
   return (
     <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen overflow-hidden">
+      <div className="sticky top-0 flex h-screen overflow-hidden pl-10">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
@@ -59,10 +62,10 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className={`group relative h-[300px] w-[450px]  bg-neutral-200 ${positionClass}`}>
+      className={`group relative h-[300px] w-[450px] ${positionClass}`}>
       <div
         style={{
-          backgroundImage: `url(${card.url})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL + card.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
